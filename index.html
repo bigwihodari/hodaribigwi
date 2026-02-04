@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodari BIGWI - Développeur Web & Data</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">Hodari BIGWI</a>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#profil" class="nav-link">Profil</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#experiences" class="nav-link">Expériences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#formation" class="nav-link">Formation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting"></p>
+                <h1 class="hero-title">Hodari BIGWI</h1>
+                <p class="hero-subtitle">Développeur web avec une appétence pour la data et l'IA</p>
+                <a href="#" id="downloadCV" class="hero-cta">
+                    <span></span>
+                    Télécharger mon CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profil" class="section profile">
+        <h2 class="section-title fade-in">À propos de moi</h2>
+        <p class="section-subtitle fade-in">Découvrez mon parcours</p>
+        
+        <div class="profile-content fade-in">
+            <div class="profile-text">
+                <p>
+                    Salut, je m'appelle <strong>Hodari Bigwi</strong>, développeur web avec une appétence pour la data et l'IA. 
+                    Mon parcours professionnel a commencé dans l'hôtellerie, où j'étais réceptionniste d'hôtel. 
+                    Cette première expérience m'a permis de développer des compétences essentielles en communication, 
+                    en gestion de la relation client et en résolution de problèmes sous pression.
+                </p>
+                <p style="margin-top: 1rem;">
+                    Passionné par la technologie et l'innovation, j'ai décidé de me reconvertir dans le développement web. 
+                    Aujourd'hui, je combine mes compétences techniques en JavaScript, React, Angular et Python avec ma 
+                    passion pour l'analyse de données et l'intelligence artificielle. J'ai eu l'opportunité de travailler 
+                    dans des environnements internationaux, notamment chez Marigold en tant qu'Architecte Technique IT, 
+                    où j'ai géré l'automatisation d'emails digitaux pour des clients français et internationaux.
+                </p>
+            </div>
+            
+            <div class="profile-highlight">
+                <div class="profile-stat">
+                    <span class="profile-stat-number">3</span>
+                    <span class="profile-stat-label">Années d'expérience en développement</span>
+                </div>
+                <div class="profile-stat">
+                    <span class="profile-stat-number">JS - Python - Java</span>
+                    <span class="profile-stat-label">Technologies</span>
+                </div>
+                <div class="profile-stat">
+                    <span class="profile-stat-number">∞</span>
+                    <span class="profile-stat-label">Passion pour l'apprentissage</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competences Section -->
+    <section id="competences" class="section competences">
+        <h2 class="section-title fade-in">Compétences</h2>
+        <p class="section-subtitle fade-in">Technologies et outils que je maîtrise</p>
+        
+        <div class="competences-grid">
+            <div class="competence-card fade-in">
+                <span class="competence-icon">💻</span>
+                <h3 class="competence-title">Développement Frontend</h3>
+                <ul class="competence-list">
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+
+            <div class="competence-card fade-in">
+                <span class="competence-icon">⚙️</span>
+                <h3 class="competence-title">Développement Backend</h3>
+                <ul class="competence-list">
+                    <li>Python</li>
+                    <li>Java / Spring</li>
+                    <li>Groovy</li>
+                    <li>API REST</li>
+                    <li>Github Action</li>
+                    <li>Prometheus & Grafana</li>
+                </ul>
+            </div>
+
+             <div class="competence-card fade-in">
+                <span class="competence-icon">🤖</span>
+                <h3 class="competence-title">Data & IA</h3>
+                <ul class="competence-list">
+                    <li>SQL</li>
+                    <li>Machine Learning</li>
+                    <li>Pandas</li>
+                    <li>Analyse prédictive</li>
+                    <li>Orange Data Mining</li>
+                    <li>Apache Hop (ETL)</li>
+                    <li>Tableau (Visualisation)</li>
+                </ul>
+            </div>
+
+            <div class="competence-card fade-in">
+                <span class="competence-icon">🗄️</span>
+                <h3 class="competence-title">Bases de données</h3>
+                <ul class="competence-list">
+                    <li>PostgreSQL</li>
+                    <li>Oracle</li>
+                    <li>Access</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+
+            <div class="competence-card fade-in">
+                <span class="competence-icon">🛠️</span>
+                <h3 class="competence-title">Outils & Méthodologies</h3>
+                <ul class="competence-list">
+                    <li>Git / GitHub / GitLab</li>
+                    <li>Postman</li>
+                    <li>Jira & Slack</li>
+                    <li>Méthode Agile</li>
+                    <li>WordPress & Shopify</li>
+                </ul>
+            </div>
+
+            <div class="competence-card fade-in">
+                <span class="competence-icon">🌍</span>
+                <h3 class="competence-title">Langues</h3>
+                <ul class="competence-list">
+                    <li>Français (Courant)</li>
+                    <li>Anglais (Courant)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="section experiences">
+        <h2 class="section-title fade-in">Expériences</h2>
+        <p class="section-subtitle fade-in">Mon parcours professionnel</p>
+        
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <p class="timeline-date">MARS 2025 - AOÛT 2025</p>
+                <h3 class="timeline-company">Promptus Technologies</h3>
+                <p class="timeline-position">Développeur web REACT / IA prédictive - STAGE</p>
+                <div class="timeline-description">
+                    <p>
+                        Participation au développement d'un progiciel avec ajout et modification de nouvelles fonctionnalités. 
+                        Réalisation de reporting et analyse de données, préparation et nettoyage des données. 
+                        Développement de modèles de prédiction des indicateurs de performance.
+                    </p>
+                </div>
+                <div class="timeline-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Data Analysis</span>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <p class="timeline-date">AVRIL 2022 - JUILLET 2024</p>
+                <h3 class="timeline-company">Marigold</h3>
+                <p class="timeline-position">Architecte Technique IT - Environnement international - CDI</p>
+                <div class="timeline-description">
+                    <p>
+                        Recueil des besoins des clients et rédaction des spécifications techniques et fonctionnelles, 
+                        en tenant compte des exigences locales et internationales. Gestion de l'automatisation des emails 
+                        digitaux pour des clients en France et à l'international, garantissant la mise en production en 
+                        temps réel et l'adaptation aux besoins spécifiques de chaque marché.
+                    </p>
+                    <p style="margin-top: 0.5rem;">
+                        Implémentation technique des solutions et supervision des mises en production dans des environnements 
+                        variés. Nettoyage, préparation et mise à disposition de jeux de données pour les tests en coopération 
+                        avec des équipes locales et internationales.
+                    </p>
+                </div>
+                <div class="timeline-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">SQL/PL</span>
+                    <span class="tech-tag">Hive</span>
+                    <span class="tech-tag">XML/XSLT</span>
+                    <span class="tech-tag">Groovy</span>
+                    <span class="tech-tag">Postman</span>
+                    <span class="tech-tag">Cheetah Loyalty</span>
+                    <span class="tech-tag">Jira</span>
+                    <span class="tech-tag">Agile</span>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in">
+                <p class="timeline-date">AVRIL 2021 - JUILLET 2021</p>
+                <h3 class="timeline-company">Pymma Software</h3>
+                <p class="timeline-position">Développeur web Angular - STAGE</p>
+                <div class="timeline-description">
+                    <p>
+                        Participation à la mise à jour d'une interface utilisateur pour un progiciel de gestion des 
+                        assurances automobiles. Utilisation de l'API REST pour intégrer les fonctionnalités de CRUD 
+                        (Create, Read, Update, Delete) et améliorer l'expérience utilisateur.
+                    </p>
+                </div>
+                <div class="timeline-tech">
+                    <span class="tech-tag">Angular 7</span>
+                    <span class="tech-tag">HTML5/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">SQL/PL</span>
+                    <span class="tech-tag">API REST</span>
+                    <span class="tech-tag">GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="section projets">
+        <h2 class="section-title fade-in">Projets</h2>
+        <p class="section-subtitle fade-in">Quelques réalisations en cours et terminés</p>
+        
+        <div class="projets-grid">
+            <div class="projet-card fade-in">
+                <div class="projet-image">⏳</div>
+                <div class="projet-content">
+                    <span class="projet-status en-cours">En cours de développement</span>
+                    <h3 class="projet-title">Application web et mobile</h3>
+                    <p class="projet-description">
+                        Développement en cours d’un projet personnel : Une application web et mobile (SaaS) de réservation de services 
+                        et de produits avec ReactJS, Python/FastAPI, PostgreSQL, GitHub Actions, Prometheus et Grafana. 
+                        Elle inclut trois groupes d’utilisateurs : administrateurs, clients et prestataires.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projet-card fade-in">
+                <div class="projet-image"><img src="capture102.PNG" alt="EJ"></div>
+                <div class="projet-content">
+                    <span class="projet-status">Terminé</span>
+                    <h3 class="projet-title">Site web frontend</h3>
+                    <p class="projet-description">
+                        Développement et déploiement d’un site web frontend en JavaScript,
+                        CSS et HTML à l’aide de GitHub et Render.                      
+                    </p>
+                    <a href="https://essayejesus.com/" class="projet-link" target="_blank" rel="noopener noreferrer">
+                        Voir le projet →
+                    </a>
+                </div>
+            </div>
+
+            <div class="projet-card fade-in">
+                <div class="projet-image"><img src="capture103.PNG" alt=""></div>
+                <div class="projet-content">
+                    <span class="projet-status">Terminé</span>
+                    <h3 class="projet-title">Développement modèle IA Prédictive</h3>
+                    <p class="projet-description">
+                        Développement d’un pipeline d’IA prédictive pour prédire les naissances dans un pays donné.
+                        Utilisation de Python, Pandas, scikit-learn, SQL et PostgreSQL.
+                        Incluant les étapes de préparation des données, d’entraînement du modèle et d’évaluation du modèle.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section id="formation" class="section formation">
+        <h2 class="section-title fade-in">Formation</h2>
+        <p class="section-subtitle fade-in">Mon parcours académique</p>
+        
+        <div class="formation-grid">
+            <div class="formation-card fade-in">
+                <p class="formation-period">2025 – 2027</p>
+                <h3 class="formation-degree">Mastère Systèmes d'Information</h3>
+                <p class="formation-school">EPSI d'Arras</p>
+            </div>
+
+            <div class="formation-card fade-in">
+                <p class="formation-period">2024 – 2025</p>
+                <h3 class="formation-degree">Bachelor informatique - DEV IA</h3>
+                <p class="formation-school">EPSI d'Arras</p>
+            </div>
+
+            <div class="formation-card fade-in">
+                <p class="formation-period">2019 – 2021</p>
+                <h3 class="formation-degree">Diplôme Universitaire de Technologie (DUT) Informatique</h3>
+                <p class="formation-school">IUT A de Lille</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title fade-in">Contact</h2>
+        <p class="section-subtitle fade-in">N'hésitez pas à me contacter</p>
+        
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <h3>Informations de contact</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:bigwihodari@gmail.com">bigwihodari@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <strong>Téléphone</strong><br>
+                        <a href="tel:+33613277068">+33 6 13 27 70 68</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <strong>LinkedIn</strong><br>
+                        <a href="https://www.linkedin.com/in/hodari-bigwi-4547a8197/" target="_blank" rel="noopener noreferrer">
+                            Voir mon profil
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <strong>Localisation</strong><br>
+                        62210 AVION, France
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form fade-in">
+                <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfae0CJqdJGbjVBjdzTkPlfKSgAYIomW4S8qMcTDZRiWrmdgg/formResponse" method="POST">
+                    <div class="form-group">
+                        <label class="form-label" for="nom">Nom *</label>
+                        <input type="text" id="nom" name="entry.992984102" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="entry.1540892899" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email *</label>
+                        <input type="email" id="email" name="entry.1871559411" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="entry.1754977761" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="objet">Objet *</label>
+                        <input type="text" id="objet" name="entry.1374572734" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message *</label>
+                        <textarea id="message" name="entry.412786422" class="form-textarea" required></textarea>
+                    </div>
+
+                    <div class="form-rgpd">
+                        <strong>Protection des données personnelles (RGPD)</strong><br>
+                        Les informations recueillies via ce formulaire sont utilisées uniquement pour vous recontacter 
+                        dans le cadre de votre demande. Vos données sont conservées de manière sécurisée et ne sont 
+                        jamais partagées avec des tiers. Vous disposez d'un droit d'accès et de 
+                        suppression de vos données personnelles. Pour exercer ces droits, contactez-moi à 
+                        bigwihodari@gmail.com.
+                    </div>
+
+                    <!-- Message de succès/erreur -->
+                    <div id="formMessage" class="form-message"></div>
+
+                    <button type="submit" class="form-submit">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© Copyright 2026 - Hodari BIGWI. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
