@@ -182,21 +182,3 @@ window.addEventListener('scroll', function() {
         }
     });
 });
-
-// Download CV functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const downloadBtn = document.getElementById('downloadCV');
-    if (downloadBtn) {
-        downloadBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Créer un lien temporaire pour forcer le téléchargement
-            const link = document.createElement('a');
-            link.href = 'CV_Hodari_BIGWI.pdf';
-            link.download = 'CV_Hodari_BIGWI.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-    }
-});
